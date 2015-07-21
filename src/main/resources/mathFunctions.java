@@ -62,4 +62,9 @@ public class mathFunctions {
     public double roundedDivisionOfTwoDoubles(double value1, double value2) {
         return (double)Math.round(value1 / value2);
     }
+
+    public double fahrenheitToCelsius(double value) {
+        return (((value - 32) * 5) / 9);
+    }
+
 }
