@@ -58,4 +58,8 @@ public class mathFunctions {
         }
         return list;
     }
+
+    public double roundedDivisionOfTwoDoubles(double value1, double value2) {
+        return (double)Math.round(value1 / value2);
+    }
 }
