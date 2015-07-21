@@ -2,16 +2,14 @@ package main.java.problems._007;
 
 import main.resources.mathFunctions;
 import java.io.*;
+import java.util.ArrayList;
 
-// Pass in link to a text file of separate lines with two numbers on them separated by a space in as
+// Pass in link to a text file of integers separated by a space in as
 // a single command line argument. example: /Users/evan/workspace/codeabbey/src/main/java/problems/_007/input
 // Text file example:
-// 10 245
-// 512 -26462
-// 17898 10386
+// 10 245 123 512 -26462 64 17898 10386 23451
 
 public class _007 {
-
     public static void main(String[] args) throws IOException {
         printDivisionOfListOfNumbers(args[0]);
     }
@@ -21,17 +19,19 @@ public class _007 {
 
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             String line;
+            StringBuffer stringBuffer = new StringBuffer();
+            ArrayList<Integer> list = new ArrayList<Integer>();
+
             mathFunctions mathFunction = new mathFunctions();
 
             while ((line = br.readLine()) != null) {
-                String[] tokens = line.split(" ");
-                double answer = 0;
-                double value1 = Integer.parseInt(tokens[0]);
-                double value2 = Integer.parseInt(tokens[1]);
+                stringBuffer.append(line);
+            }
 
-                answer = mathFunction.roundedDivisionOfTwoDoubles(value1, value2);
+            list = mathFunction.stingToIntegerArraylist(stringBuffer.toString());
 
-                System.out.print((int) answer + " ");
+            for (int i = 0; i < list.size(); i++) {
+                System.out.print(mathFunction.fahrenheitToCelsius((double) list.get(i)) + " ");
             }
         }
     }

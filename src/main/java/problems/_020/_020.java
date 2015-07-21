@@ -1,17 +1,17 @@
-package main.java.problems._009;
+package main.java.problems._020;
 
 import main.resources.mathFunctions;
 import java.io.*;
 
 // Pass in link to a text file of separate lines with lowercase characters as
-// a single command line argument. example: /Users/evan/workspace/codeabbey/src/main/java/problems/_007/input
+// a single command line argument. example: /Users/evan/workspace/codeabbey/src/main/java/problems/_020/input
 // Text file example:
 // abracadabra
 // pear tree
 // o a kak ushakov lil vo kashu kakao
 // my pyx
 
-public class _009 {
+public class _020 {
 
     public static void main(String[] args) throws IOException {
         printNumberOfVowelsInList(args[0]);

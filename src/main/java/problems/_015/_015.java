@@ -1,26 +1,30 @@
-package main.java.problems._008;
+package main.java.problems._015;
+
 
 import main.resources.mathFunctions;
+
 import java.io.*;
 import java.util.ArrayList;
 
 // Pass in link to a text file of integers separated by a space in as
-// a single command line argument. example: /Users/evan/workspace/codeabbey/src/main/java/problems/_008/input
+// a single command line argument. example: /Users/evan/workspace/codeabbey/src/main/java/problems/_015/input
 // Text file example:
 // 10 245 123 512 -26462 64 17898 10386 23451
 
-public class _008 {
+public class _015 {
     public static void main(String[] args) throws IOException {
-        printDivisionOfListOfNumbers(args[0]);
+        printLargestAndSmallestOfAStringOfNumbers(args[0]);
     }
 
-    public static void printDivisionOfListOfNumbers(String fileName) throws IOException {
+    public static void printLargestAndSmallestOfAStringOfNumbers(String fileName) throws IOException {
         File file = new File(fileName);
 
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             String line;
             StringBuffer stringBuffer = new StringBuffer();
             ArrayList<Integer> list = new ArrayList<Integer>();
+            int largestInteger;
+            int smallestInteger;
 
             mathFunctions mathFunction = new mathFunctions();
 
@@ -30,9 +34,10 @@ public class _008 {
 
             list = mathFunction.stingToIntegerArraylist(stringBuffer.toString());
 
-            for (int i = 0; i < list.size(); i++) {
-                System.out.print(mathFunction.fahrenheitToCelsius((double) list.get(i)) + " ");
-            }
+            smallestInteger = mathFunction.smallestOfArraylistOfIntegers(list);
+            largestInteger = mathFunction.largestOfArraylistOfIntegers(list);
+
+            System.out.print(largestInteger + " " + smallestInteger);
         }
     }
 }
