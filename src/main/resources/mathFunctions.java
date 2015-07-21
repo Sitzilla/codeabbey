@@ -67,4 +67,20 @@ public class mathFunctions {
         return (int) Math.round((((value - 32) * 5) / 9));
     }
 
+    // Only words for lowercase vowels
+    public boolean characterIsVowel(char ch) {
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+            return true;
+        }
+        return false;
+    }
+
+    // Only words for lowercase
+    public boolean characterIsY(char ch) {
+        if (ch == 'y') {
+            return true;
+        }
+        return false;
+    }
+
 }

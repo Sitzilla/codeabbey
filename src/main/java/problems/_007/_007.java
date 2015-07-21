@@ -3,6 +3,13 @@ package main.java.problems._007;
 import main.resources.mathFunctions;
 import java.io.*;
 
+// Pass in link to a text file of separate lines with two numbers on them separated by a space in as
+// a single command line argument. example: /Users/evan/workspace/codeabbey/src/main/java/problems/_007/input
+// Text file example:
+// 10 245
+// 512 -26462
+// 17898 10386
+
 public class _007 {
 
     public static void main(String[] args) throws IOException {
