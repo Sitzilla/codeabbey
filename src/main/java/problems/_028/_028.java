@@ -3,6 +3,13 @@ package main.java.problems._028;
 import main.resources.mathFunctions;
 import java.io.*;
 
+// Pass in link to a text file of separate lines with two doubles on them (weight and height) separated by a space in as
+// a single command line argument. example: /Users/evan/workspace/codeabbey/src/main/java/problems/_028/input
+// Text file example:
+// 10 245.123
+// 512 -26462.865
+// 17898 10386.92
+
 public class _028 {
 
     public static void main(String[] args) throws IOException {

@@ -108,5 +108,11 @@ public class mathFunctions {
         return "";
     }
 
+    // Takes in a float and returns the associated dice roll
+    // Multiply the float by 6, round it down to an int, then add 1
+    public int floatToDiceRoll(float value) {
+        return ((int) Math.floor(value * 6) + 1);
+    }
+
 
 }
