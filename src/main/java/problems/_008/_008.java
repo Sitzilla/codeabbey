@@ -4,6 +4,10 @@ import main.resources.mathFunctions;
 import java.io.*;
 import java.util.ArrayList;
 
+// Pass in link to a text file of integers separated by a space in as
+// a single command line argument. example: /Users/evan/workspace/codeabbey/src/main/java/problems/_008/input
+// Text file example:
+// 10 245 123 512 -26462 64 17898 10386 23451
 
 public class _008 {
     public static void main(String[] args) throws IOException {
