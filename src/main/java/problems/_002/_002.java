@@ -3,9 +3,8 @@ package main.java.problems._002;
 import main.resources.runner;
 import java.util.*;
 
-/**
- * Created by evan on 7/16/15.
- */
+// Pass in a string of integers separated by a space to be summed
+// Example: 10 20 30 40 5 6 7 8
 
 public class _002 {
 

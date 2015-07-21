@@ -1,5 +1,7 @@
 package main.java.problems._001;
-// Pass in '5724098 6769779' as arguments
+
+// Pass in two integers separated by a single space as arguments
+
 public class _001 {
 
     public static void main(String[] args) {
@@ -15,12 +17,10 @@ public class _001 {
                 System.exit(1);
             }
         }
-
         System.out.println(sumTwoNumbers(value1, value2));
     }
 
     public static int sumTwoNumbers(int value1, int value2) {
         return value1 + value2;
     }
-
 }
