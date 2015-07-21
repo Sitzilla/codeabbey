@@ -89,5 +89,24 @@ public class mathFunctions {
         return unsortedList;
     }
 
+    // Calculations are in metric
+    public String bmi(double weight, double height) {
+        double bmi;
+        bmi = (weight / Math.pow(height, 2));
+
+        if (bmi < 18.5) {
+            return "under";
+        } else if (18.5 <= bmi && bmi < 25.0) {
+            return "normal";
+        } else if (25.0 <= bmi && bmi < 30.0) {
+            return "over";
+        } else if (30.0 <= bmi) {
+            return "obese";
+        }
+
+        System.out.println("Error, BMI not detected");
+        return "";
+    }
+
 
 }
