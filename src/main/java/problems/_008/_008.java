@@ -13,18 +13,22 @@ public class _008 {
     public static void printDivisionOfListOfNumbers(String fileName) throws IOException {
         File file = new File(fileName);
 
-        StringBuffer stringBuffer = new StringBuffer();
-        ArrayList<Integer> list = new ArrayList<Integer>();
-        int largestInteger;
-        int smallestInteger;
+        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+            String line;
+            StringBuffer stringBuffer = new StringBuffer();
+            ArrayList<Integer> list = new ArrayList<Integer>();
 
-        mathFunctions mathFunction = new mathFunctions();
+            mathFunctions mathFunction = new mathFunctions();
 
-        while ((line = br.readLine()) != null) {
-            stringBuffer.append(line);
+            while ((line = br.readLine()) != null) {
+                stringBuffer.append(line);
+            }
+
+            list = mathFunction.stingToIntegerArraylist(stringBuffer.toString());
+
+            for (int i = 0; i < list.size(); i++) {
+                System.out.print(mathFunction.fahrenheitToCelsius((double) list.get(i)) + " ");
+            }
         }
-
-        list = mathFunction.stingToIntegerArraylist(stringBuffer.toString());
-
     }
 }

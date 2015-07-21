@@ -63,8 +63,8 @@ public class mathFunctions {
         return (double)Math.round(value1 / value2);
     }
 
-    public double fahrenheitToCelsius(double value) {
-        return (((value - 32) * 5) / 9);
+    public int fahrenheitToCelsius(double value) {
+        return (int) Math.round((((value - 32) * 5) / 9));
     }
 
 }
