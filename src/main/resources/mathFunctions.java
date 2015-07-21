@@ -2,6 +2,7 @@ package main.resources;
 
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class mathFunctions {
 
@@ -82,5 +83,11 @@ public class mathFunctions {
         }
         return false;
     }
+
+    public ArrayList<Integer> sortArraylistOfIntegers(ArrayList<Integer> unsortedList) {
+        Collections.sort(unsortedList);
+        return unsortedList;
+    }
+
 
 }
