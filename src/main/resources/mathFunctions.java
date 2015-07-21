@@ -1,6 +1,8 @@
 package main.resources;
 
 
+import java.util.ArrayList;
+
 public class mathFunctions {
 
     public mathFunctions() {
@@ -19,4 +21,41 @@ public class mathFunctions {
         return 0;
     }
 
+    public int smallestOfThreeIntegers(int value1, int value2, int value3) {
+        return Math.min(value1, Math.min(value2, value3));
+    }
+
+
+    public int smallestOfArraylistOfIntegers(ArrayList<Integer> integerArraylist) {
+        int answer = integerArraylist.get(0);
+
+        for (int i = 0; i < integerArraylist.size(); i++) {
+            if (answer > integerArraylist.get(i)) {
+                answer = integerArraylist.get(i);
+            }
+        }
+        return answer;
+    }
+
+    public int largestOfArraylistOfIntegers(ArrayList<Integer> integerArraylist) {
+        int answer = integerArraylist.get(0);
+
+        for (int i = 0; i < integerArraylist.size(); i++) {
+            if (answer < integerArraylist.get(i)) {
+                answer = integerArraylist.get(i);
+            }
+        }
+        return answer;
+    }
+
+    // Takes a string of integers separated by a space and returns an Arraylist of integers
+    public ArrayList<Integer> stingToIntegerArraylist(String str) {
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        String[] tokens = str.split(" ");
+
+        for (int i = 0; i < tokens.length; i++) {
+            list.add(Integer.parseInt(tokens[i]));
+        }
+        return list;
+    }
 }
