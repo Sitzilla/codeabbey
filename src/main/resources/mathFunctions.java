@@ -162,6 +162,16 @@ public class mathFunctions {
         return list;
     }
 
+    public ArrayList<Integer> stringArrayToIntegerArraylist(String[] str) {
+        ArrayList<Integer> list = new ArrayList<Integer>();
+
+        for (int i = 0; i < str.length; i ++) {
+            list.add(Integer.parseInt(str[i]));
+        }
+
+        return list;
+    }
+
     // Algorithm defined at http://www.codeabbey.com/index/task_view/array-checksum
     public long checksumOfArraylist(ArrayList<Long> list) {
         long result = 0;
@@ -175,6 +185,20 @@ public class mathFunctions {
 
         return result;
     }
+
+
+    // Counts integers in an ArrayList per http://www.codeabbey.com/index/task_view/array-counters
+    public ArrayList<Integer> countIntegersInArraylist(ArrayList<Integer> integerList) {
+        ArrayList<Integer> list = new ArrayList<Integer>();
+
+        for (int i = 0; i < integerList.size(); i ++) {
+            l
+            list.add(Integer.parseInt(str[i]));
+        }
+
+        return list;
+    }
+
 
 
 }
