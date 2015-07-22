@@ -124,5 +124,18 @@ public class mathFunctions {
         return answer;
     }
 
+    // Recursive algorithm to find the sum of digits of an integer
+    public int sumOfDigits(int value) {
+
+        if (value < 10) {
+            return value;
+        }
+
+        int remainder = value % 10;
+        int answer = (sumOfDigits(value / 10) + remainder);
+
+        return answer;
+    }
+
 
 }
