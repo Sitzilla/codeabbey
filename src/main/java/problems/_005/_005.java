@@ -21,7 +21,6 @@ public class _005 {
 
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             String line;
-            String totalNumbers;
 
             mathFunctions mathFunction = new mathFunctions();
 

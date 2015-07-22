@@ -137,5 +137,20 @@ public class mathFunctions {
         return answer;
     }
 
+    // Average of array of integers (zeros are ignored)
+    public double averageOfArraylist(ArrayList<Integer> list) {
+        double counter = 0;
+        double sum = 0;
+
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) != 0) {
+                sum += list.get(i);
+                counter++;
+            }
+        }
+
+        return Math.round(sum / counter);
+    }
+
 
 }
