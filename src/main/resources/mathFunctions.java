@@ -114,5 +114,15 @@ public class mathFunctions {
         return ((int) Math.floor(value * 6) + 1);
     }
 
+    // Method summing the multiples of each digit by its position counting from the left
+    public int weightedSumOfInteger(String value) {
+        int answer = 0;
+        for (int i = 0; i < value.length(); i++) {
+            int digit = Character.getNumericValue(value.charAt(i));
+            answer += ((i + 1) * digit);
+        }
+        return answer;
+    }
+
 
 }
