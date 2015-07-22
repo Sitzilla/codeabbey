@@ -152,5 +152,29 @@ public class mathFunctions {
         return Math.round(sum / counter);
     }
 
+    public ArrayList<Long> stringArrayToLongArraylist(String[] str) {
+        ArrayList<Long> list = new ArrayList<Long>();
+
+        for (int i = 0; i < str.length; i ++) {
+            list.add(Long.parseLong(str[i]));
+        }
+
+        return list;
+    }
+
+    // Algorithm defined at http://www.codeabbey.com/index/task_view/array-checksum
+    public long checksumOfArraylist(ArrayList<Long> list) {
+        long result = 0;
+        long limit = 10000007;
+        int seed = 113;
+
+        for (int i = 0; i < list.size(); i++) {
+            result = (result + list.get(i)) * seed;
+            result = result % limit;
+        }
+
+        return result;
+    }
+
 
 }
