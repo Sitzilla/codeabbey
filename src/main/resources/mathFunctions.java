@@ -191,10 +191,11 @@ public class mathFunctions {
     public ArrayList<Integer> countIntegersInArraylist(ArrayList<Integer> integerList) {
         ArrayList<Integer> list = new ArrayList<Integer>();
 
-        for (int i = 0; i < integerList.size(); i ++) {
-            l
-            list.add(Integer.parseInt(str[i]));
-        }
+//        for (int i = 0; i < integerList.size(); i ++) {
+//            list.add(Integer.parseInt(str[i]));
+//        }
+
+        // TODO finish this subroutine
 
         return list;
     }
