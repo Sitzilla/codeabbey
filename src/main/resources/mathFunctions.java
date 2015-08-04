@@ -3,6 +3,8 @@ package main.resources;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Stack;
+
 
 public class mathFunctions {
 
@@ -200,6 +202,24 @@ public class mathFunctions {
         return answer;
     }
 
+    // Reverses string using a stack class.  Since the object of this exercise is coding experience this method
+    // does not use the reverse() method.  Problem at http://www.codeabbey.com/index/task_view/reverse-string
+    public String reverseString(String str) {
+        Stack characterStack = new Stack();
+        String answer = "";
+
+        for (int i = 0; i < str.length(); i++) {
+            characterStack.push(str.charAt(i));
+        }
+
+        int size = characterStack.size();
+
+        for (int i = 0; i < size; i++) {
+            answer += characterStack.pop();
+        }
+
+        return answer;
+    }
 
 
 }
