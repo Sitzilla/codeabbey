@@ -35,7 +35,11 @@ public class _021 {
 
             answer = mathFunction.countIntegersInArraylist(list);
 
-            System.out.print(answer + " ");
+            for (int i = 0; i < answer.size(); i++) {
+                if (answer.get(i) != 0) {
+                    System.out.print(answer.get(i) + " ");
+                }
+            }
         }
     }
 

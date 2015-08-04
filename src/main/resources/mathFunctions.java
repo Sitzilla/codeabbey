@@ -189,15 +189,15 @@ public class mathFunctions {
 
     // Counts integers in an ArrayList per http://www.codeabbey.com/index/task_view/array-counters
     public ArrayList<Integer> countIntegersInArraylist(ArrayList<Integer> integerList) {
-        ArrayList<Integer> list = new ArrayList<Integer>();
+        //Initialize arraylist with capacity of 20 and all values initialized to 0
+        ArrayList<Integer> answer = new ArrayList<Integer>(Collections.nCopies(20, 0));
 
-//        for (int i = 0; i < integerList.size(); i ++) {
-//            list.add(Integer.parseInt(str[i]));
-//        }
+        for (int i = 0; i < integerList.size(); i ++) {
+            int index = integerList.get(i);
+            answer.set(index, answer.get(index) + 1);
+        }
 
-        // TODO finish this subroutine
-
-        return list;
+        return answer;
     }
 
 
