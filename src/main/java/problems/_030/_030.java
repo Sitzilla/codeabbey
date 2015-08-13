@@ -12,10 +12,10 @@ import java.util.ArrayList;
 public class _030 {
 
     public static void main(String[] args) throws IOException {
-        printArrayCounters(args[0]);
+        reverseStringArray(args[0]);
     }
 
-    public static void printArrayCounters(String fileName) throws IOException {
+    public static void reverseStringArray(String fileName) throws IOException {
         File file = new File(fileName);
 
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
