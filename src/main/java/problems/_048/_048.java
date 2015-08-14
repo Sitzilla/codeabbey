@@ -32,6 +32,7 @@ public class _048 {
             list = mathFunction.stringArrayToIntegerArraylist(tokens);
 
 
+            // 
 //            for (int i = 0; i < tokens.length; i++) {
 //                answer.add(0, mathFunction.reverseString(tokens[i])); // prepend so final solution is reversed
 //            }
