@@ -19,10 +19,10 @@ public class _048 {
         File file = new File(fileName);
 
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
-            String line;
-            StringBuffer stringBuffer = new StringBuffer();
             ArrayList<Integer> list = new ArrayList<Integer>();
             mathFunctions mathFunction = new mathFunctions();
+
+
 
             while ((line = br.readLine()) != null) {
                 stringBuffer.append(line);
