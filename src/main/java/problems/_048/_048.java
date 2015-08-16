@@ -5,6 +5,7 @@ package main.java.problems._048;
 // Text file example:
 // 2 15 97
 
+import main.resources.builder;
 import main.resources.mathFunctions;
 import java.io.*;
 import java.util.ArrayList;
@@ -20,16 +21,9 @@ public class _048 {
 
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             ArrayList<Integer> list = new ArrayList<Integer>();
-            mathFunctions mathFunction = new mathFunctions();
 
 
-
-            while ((line = br.readLine()) != null) {
-                stringBuffer.append(line);
-            }
-
-            String[] tokens = stringBuffer.toString().split(" ");
-            list = mathFunction.stringArrayToIntegerArraylist(tokens);
+            list = builder.buildIntArrayFromInput(br);
 
 
             //
