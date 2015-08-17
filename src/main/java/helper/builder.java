@@ -20,6 +20,17 @@ public class builder {
         return mathFunction.stringArrayToIntegerArraylist(tokens);
     }
 
+    public static ArrayList<String> buildStringArrayOfEachLineOfInput(BufferedReader br) throws IOException {
+        String line;
+        StringBuffer stringBuffer = new StringBuffer();
+        ArrayList<String> tokens = new ArrayList<>();
+
+        while ((line = br.readLine()) != null) {
+            tokens.add(line);
+        }
+        return tokens;
+    }
+
     private static StringBuffer readInputAsStringbuffer(BufferedReader br) throws IOException {
         String line;
         StringBuffer stringBuffer = new StringBuffer();
