@@ -5,7 +5,7 @@ package main.java.problems._013;
 // Text file example:
 // 10 245 123 512 -26462 64 17898 10386 23451
 
-import main.resources.mathFunctions;
+import main.java.helper.mathFunctions;
 import java.io.*;
 
 public class _013 {

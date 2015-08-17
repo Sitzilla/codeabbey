@@ -5,7 +5,7 @@ package main.java.problems._030;
 // Text file example:
 // four score and seven years ago
 
-import main.resources.mathFunctions;
+import main.java.helper.mathFunctions;
 import java.io.*;
 import java.util.ArrayList;
 

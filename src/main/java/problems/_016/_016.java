@@ -7,7 +7,7 @@ package main.java.problems._016;
 // 20 10 0
 // 1 0
 
-import main.resources.mathFunctions;
+import main.java.helper.mathFunctions;
 
 import java.io.*;
 import java.util.ArrayList;

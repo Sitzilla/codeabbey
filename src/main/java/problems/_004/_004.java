@@ -1,6 +1,6 @@
 package main.java.problems._004;
 
-import main.resources.mathFunctions;
+import main.java.helper.mathFunctions;
 import java.io.*;
 
 // Pass in link to a text file of separate lines with two numbers on them separated by a space in as

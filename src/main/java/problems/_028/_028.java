@@ -1,6 +1,6 @@
 package main.java.problems._028;
 
-import main.resources.mathFunctions;
+import main.java.helper.mathFunctions;
 import java.io.*;
 
 // Pass in link to a text file of separate lines with two doubles on them (weight and height) separated by a space in as

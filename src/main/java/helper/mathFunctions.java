@@ -1,4 +1,4 @@
-package main.resources;
+package main.java.helper;
 
 
 import java.util.ArrayList;
@@ -219,6 +219,21 @@ public class mathFunctions {
         }
 
         return answer;
+    }
+
+    // Recursive function to count the number of times a number takes to go to zero using the Collatz Sequence
+    public int countCollatzSequence(int x, int counter = 0) {
+        int counter = 0;
+
+        if (x == 1) {
+            return counter;
+        } else if (x % 2 == 0) {
+            countCollatzSequence
+        }
+
+
+
+        return counter;
     }
 
 

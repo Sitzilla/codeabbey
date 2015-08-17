@@ -5,8 +5,8 @@ package main.java.problems._048;
 // Text file example:
 // 2 15 97
 
-import main.resources.builder;
-import main.resources.mathFunctions;
+import main.java.helper.builder;
+
 import java.io.*;
 import java.util.ArrayList;
 

@@ -1,6 +1,6 @@
 package main.java.problems._002;
 
-import main.resources.runner;
+import main.java.helper.runner;
 import java.util.*;
 
 // Pass in a string of integers separated by a space to be summed

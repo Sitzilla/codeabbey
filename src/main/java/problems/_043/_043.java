@@ -10,7 +10,7 @@ package main.java.problems._043;
 // 0.808033385314
 // 0.0544673665427
 
-import main.resources.mathFunctions;
+import main.java.helper.mathFunctions;
 
 import java.io.*;
 

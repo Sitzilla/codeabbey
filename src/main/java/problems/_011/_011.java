@@ -7,7 +7,7 @@ package main.java.problems._011;
 // 512 26462 64
 // 17898 10386 23451
 
-import main.resources.mathFunctions;
+import main.java.helper.mathFunctions;
 
 import java.io.*;
 

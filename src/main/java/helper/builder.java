@@ -1,5 +1,4 @@
-package main.resources;
-import main.resources.mathFunctions;
+package main.java.helper;
 
 import java.io.BufferedReader;
 import java.io.IOException;
