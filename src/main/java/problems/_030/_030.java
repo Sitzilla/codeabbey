@@ -5,7 +5,7 @@ package main.java.problems._030;
 // Text file example:
 // four score and seven years ago
 
-import main.java.helper.mathFunctions;
+import main.java.helper.MathFunctions;
 import java.io.*;
 import java.util.ArrayList;
 
@@ -22,7 +22,7 @@ public class _030 {
             String line;
             StringBuffer stringBuffer = new StringBuffer();
             ArrayList<String> answer = new ArrayList<String>();
-            mathFunctions mathFunction = new mathFunctions();
+            MathFunctions mathFunction = new MathFunctions();
 
             while ((line = br.readLine()) != null) {
                 stringBuffer.append(line);

@@ -7,7 +7,7 @@ package main.java.problems._016;
 // 20 10 0
 // 1 0
 
-import main.java.helper.mathFunctions;
+import main.java.helper.MathFunctions;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -23,7 +23,7 @@ public class _016 {
 
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             String line;
-            mathFunctions mathFunction = new mathFunctions();
+            MathFunctions mathFunction = new MathFunctions();
 
             while ((line = br.readLine()) != null) {
                 String[] tokens = line.split(" ");

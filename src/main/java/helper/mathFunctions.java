@@ -6,9 +6,9 @@ import java.util.Collections;
 import java.util.Stack;
 
 
-public class mathFunctions {
+public class MathFunctions {
 
-    public mathFunctions() {
+    public MathFunctions() {
 
     }
 

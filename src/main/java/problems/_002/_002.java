@@ -1,6 +1,6 @@
 package main.java.problems._002;
 
-import main.java.helper.runner;
+import main.java.helper.Runner;
 import java.util.*;
 
 // Pass in a string of integers separated by a space to be summed
@@ -10,7 +10,7 @@ public class _002 {
 
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<Integer>();
-        runner inputRunner = new runner(args);
+        Runner inputRunner = new Runner(args);
         int answer = 0;
 
         list = inputRunner.parseInput();

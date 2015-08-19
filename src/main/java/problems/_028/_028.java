@@ -1,6 +1,6 @@
 package main.java.problems._028;
 
-import main.java.helper.mathFunctions;
+import main.java.helper.MathFunctions;
 import java.io.*;
 
 // Pass in link to a text file of separate lines with two doubles on them (weight and height) separated by a space in as
@@ -21,7 +21,7 @@ public class _028 {
 
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             String line;
-            mathFunctions mathFunction = new mathFunctions();
+            MathFunctions mathFunction = new MathFunctions();
 
             while ((line = br.readLine()) != null) {
                 String[] tokens = line.split(" ");

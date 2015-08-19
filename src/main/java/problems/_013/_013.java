@@ -5,7 +5,7 @@ package main.java.problems._013;
 // Text file example:
 // 10 245 123 512 -26462 64 17898 10386 23451
 
-import main.java.helper.mathFunctions;
+import main.java.helper.MathFunctions;
 import java.io.*;
 
 public class _013 {
@@ -19,7 +19,7 @@ public class _013 {
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             String line;
             StringBuffer stringBuffer = new StringBuffer();
-            mathFunctions mathFunction = new mathFunctions();
+            MathFunctions mathFunction = new MathFunctions();
 
             while ((line = br.readLine()) != null) {
                 stringBuffer.append(line);

@@ -5,10 +5,10 @@ import java.util.*;
 /**
  * Created by evan on 7/16/15.
  */
-public class runner {
+public class Runner {
     String[] args;
 
-    public runner(String[] pArgs) {
+    public Runner(String[] pArgs) {
         args = pArgs;
     }
 

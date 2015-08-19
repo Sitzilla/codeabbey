@@ -5,7 +5,7 @@ package main.java.problems._021;
 // Text file example:
 // 10 245 123 512 26462 64 17898 10386 23451
 
-import main.java.helper.mathFunctions;
+import main.java.helper.MathFunctions;
 import java.io.*;
 import java.util.ArrayList;
 
@@ -23,7 +23,7 @@ public class _021 {
             StringBuffer stringBuffer = new StringBuffer();
             ArrayList<Integer> list = new ArrayList<Integer>();
             ArrayList<Integer> answer = new ArrayList<Integer>();
-            mathFunctions mathFunction = new mathFunctions();
+            MathFunctions mathFunction = new MathFunctions();
 
             while ((line = br.readLine()) != null) {
                 stringBuffer.append(line);

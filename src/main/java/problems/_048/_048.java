@@ -5,7 +5,7 @@ package main.java.problems._048;
 // Text file example:
 // 2 15 97
 
-import main.java.helper.builder;
+import main.java.helper.Builder;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -23,7 +23,7 @@ public class _048 {
             ArrayList<Integer> list = new ArrayList<Integer>();
 
 
-            list = builder.buildIntArrayFromInput(br);
+            list = Builder.buildIntArrayFromInput(br);
 
 
             //

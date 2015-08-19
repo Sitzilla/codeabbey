@@ -1,6 +1,6 @@
 package main.java.problems._041;
 
-import main.java.helper.mathFunctions;
+import main.java.helper.MathFunctions;
 import java.io.*;
 import java.util.ArrayList;
 
@@ -24,7 +24,7 @@ public class _041 {
             String line;
             String totalNumbers;
 
-            mathFunctions mathFunction = new mathFunctions();
+            MathFunctions mathFunction = new MathFunctions();
 
             while ((line = br.readLine()) != null) {
                 ArrayList<Integer> unsortedList = new ArrayList<Integer>();

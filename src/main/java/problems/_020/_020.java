@@ -1,6 +1,6 @@
 package main.java.problems._020;
 
-import main.java.helper.mathFunctions;
+import main.java.helper.MathFunctions;
 import java.io.*;
 
 // Pass in link to a text file of separate lines with lowercase characters as
@@ -34,7 +34,7 @@ public class _020 {
 
     public static int numberOfVowelsInString(String str) {
         int counter = 0;
-        mathFunctions mathFunction = new mathFunctions();
+        MathFunctions mathFunction = new MathFunctions();
 
         for (int i = 0; i < str.length(); i++) {
             if (mathFunction.characterIsVowel(str.charAt(i)) || mathFunction.characterIsY(str.charAt(i))) {

@@ -8,11 +8,11 @@ import java.util.ArrayList;
  * Created by evan on 8/16/15.
  */
 
-// Static builder class to manage reading input
-public class builder {
+// Static Builder class to manage reading input
+public class Builder {
 
     public static ArrayList<Integer> buildIntArrayFromInput(BufferedReader br) throws IOException {
-        mathFunctions mathFunction = new mathFunctions();
+        MathFunctions mathFunction = new MathFunctions();
 
         StringBuffer stringBuffer = readInputAsStringbuffer(br);
         String[] tokens = tokenizeString(stringBuffer);

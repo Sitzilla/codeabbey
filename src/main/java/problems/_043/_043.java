@@ -10,7 +10,7 @@ package main.java.problems._043;
 // 0.808033385314
 // 0.0544673665427
 
-import main.java.helper.mathFunctions;
+import main.java.helper.MathFunctions;
 
 import java.io.*;
 
@@ -24,7 +24,7 @@ public class _043 {
 
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             String line;
-            mathFunctions mathFunction = new mathFunctions();
+            MathFunctions mathFunction = new MathFunctions();
 
             while ((line = br.readLine()) != null) {
                 int answer;

@@ -1,6 +1,6 @@
 package main.java.problems._007;
 
-import main.java.helper.mathFunctions;
+import main.java.helper.MathFunctions;
 import java.io.*;
 import java.util.ArrayList;
 
@@ -22,7 +22,7 @@ public class _007 {
             StringBuffer stringBuffer = new StringBuffer();
             ArrayList<Integer> list = new ArrayList<Integer>();
 
-            mathFunctions mathFunction = new mathFunctions();
+            MathFunctions mathFunction = new MathFunctions();
 
             while ((line = br.readLine()) != null) {
                 stringBuffer.append(line);
