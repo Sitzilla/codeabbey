@@ -247,7 +247,7 @@ public class MathFunctions {
         int answer = 0;
 
         for (int i = 0; i < N; i++) {
-            answer = (A + (B * N));
+            answer += (A + (B * i));
         }
         return answer;
     }
