@@ -221,20 +221,26 @@ public class MathFunctions {
         return answer;
     }
 
-    // Recursive function to count the number of times a number takes to go to zero using the Collatz Sequence
-    public int countCollatzSequence(int x) {
-        int counter = 0;
-
+    // Recursive function to count the number of times a number takes to go to zero using the Collatz Sequence:
+    /*
+    if X is even (i.e. X modulo 2 = 0) then
+        Xnext = X / 2
+    else
+        Xnext = 3 * X + 1
+    */
+    public static int countCollatzSequence(int counter, int x) {
         if (x == 1) {
             return counter;
         } else if (x % 2 == 0) {
-           // countCollatzSequence
+            counter++;
+            x = x / 2;
+            counter = countCollatzSequence(counter, x);
+        } else {
+            counter++;
+            x = ((3 * x) + 1);
+            counter = countCollatzSequence(counter, x);
         }
-
-
-
         return counter;
     }
-
 
 }
