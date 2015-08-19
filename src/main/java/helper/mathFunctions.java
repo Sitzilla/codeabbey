@@ -243,4 +243,12 @@ public class MathFunctions {
         return counter;
     }
 
+    public static int calculateArithmeticSequence(final int A, final int B, final int N) {
+        int answer = 0;
+
+        for (int i = 0; i < N; i++) {
+            answer = (A + (B * N));
+        }
+        return answer;
+    }
 }
