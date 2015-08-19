@@ -31,7 +31,7 @@ public class _021 {
 
             String[] tokens = stringBuffer.toString().split(" ");
 
-            list = mathFunction.stringArrayToIntegerArraylist(tokens);
+            list = MathFunctions.stringArrayToIntegerArraylist(tokens);
 
             answer = mathFunction.countIntegersInArraylist(list);
 

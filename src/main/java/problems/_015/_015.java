@@ -32,7 +32,7 @@ public class _015 {
                 stringBuffer.append(line);
             }
 
-            list = mathFunction.stingToIntegerArraylist(stringBuffer.toString());
+            list = MathFunctions.stingToIntegerArraylist(stringBuffer.toString());
 
             smallestInteger = mathFunction.smallestOfArraylistOfIntegers(list);
             largestInteger = mathFunction.largestOfArraylistOfIntegers(list);

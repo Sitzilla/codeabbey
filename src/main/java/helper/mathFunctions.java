@@ -52,7 +52,7 @@ public class MathFunctions {
     }
 
     // Takes a string of integers separated by a space and returns an Arraylist of integers
-    public ArrayList<Integer> stingToIntegerArraylist(String str) {
+    public static ArrayList<Integer> stingToIntegerArraylist(String str) {
         ArrayList<Integer> list = new ArrayList<Integer>();
         String[] tokens = str.split(" ");
 
@@ -164,7 +164,7 @@ public class MathFunctions {
         return list;
     }
 
-    public ArrayList<Integer> stringArrayToIntegerArraylist(String[] str) {
+    public static ArrayList<Integer> stringArrayToIntegerArraylist(String[] str) {
         ArrayList<Integer> list = new ArrayList<Integer>();
 
         for (int i = 0; i < str.length; i ++) {

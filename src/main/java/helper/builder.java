@@ -11,13 +11,11 @@ import java.util.ArrayList;
 // Static Builder class to manage reading input
 public class Builder {
 
-    public static ArrayList<Integer> buildIntArrayFromInput(BufferedReader br) throws IOException {
-        MathFunctions mathFunction = new MathFunctions();
-
+    public static ArrayList<Integer> buildIntArrayFromBufferedReader(BufferedReader br) throws IOException {
         StringBuffer stringBuffer = readInputAsStringbuffer(br);
         String[] tokens = tokenizeString(stringBuffer);
 
-        return mathFunction.stringArrayToIntegerArraylist(tokens);
+        return MathFunctions.stringArrayToIntegerArraylist(tokens);
     }
 
     public static ArrayList<String> buildStringArrayOfEachLineOfInput(BufferedReader br) throws IOException {

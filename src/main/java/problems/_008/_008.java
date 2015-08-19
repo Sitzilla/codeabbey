@@ -22,12 +22,15 @@ public class _008 {
         File file = new File(fileName);
 
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
-            ArrayList<String> sequences;
+            ArrayList<String> sequences = Builder.buildStringArrayOfEachLineOfInput(br);
 
-            numbers = Builder.buildIntArrayFromInput(br);
+            for (String sequence : sequences) {
+                ArrayList<Integer> sequenceValues = MathFunctions.stingToIntegerArraylist(sequence);
+                int A = sequenceValues.get(0);
+                int B = sequenceValues.get(1);
+                int N = sequenceValues.get(2);
 
-            for (int number : numbers) {
-                System.out.print(MathFunctions.countCollatzSequence(0, number) + " ");
+                System.out.print(MathFunctions.calculateArithmeticSequence(A, B, N);
             }
         }
     }

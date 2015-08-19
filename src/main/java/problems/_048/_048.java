@@ -23,7 +23,7 @@ public class _048 {
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             ArrayList<Integer> numbers;
 
-            numbers = Builder.buildIntArrayFromInput(br);
+            numbers = Builder.buildIntArrayFromBufferedReader(br);
 
             for (int number : numbers) {
                 System.out.print(MathFunctions.countCollatzSequence(0, number) + " ");
