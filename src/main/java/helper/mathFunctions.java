@@ -252,12 +252,12 @@ public class MathFunctions {
         return answer;
     }
 
-    public static boolean isTriangle(final int A, final int B, final int C) {
+    public static int isTriangle(final int A, final int B, final int C) {
 
-        if (A + B < C) { return false; }
-        if (A + C < B) { return false; }
-        if (B + C < A) { return false; }
+        if (A + B < C) { return 0; }
+        if (A + C < B) { return 0; }
+        if (B + C < A) { return 0; }
 
-        return true;
+        return 1;
     }
 }
