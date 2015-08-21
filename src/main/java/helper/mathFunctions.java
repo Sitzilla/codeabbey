@@ -1,6 +1,7 @@
 package main.java.helper;
 
 
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Stack;
@@ -261,14 +262,14 @@ public class MathFunctions {
         return 1;
     }
 
-    public static int performOperation(int initialValue, char operator, int modifier) {
+    public static BigInteger performOperation(BigInteger initialValue, char operator, long modifier) {
         switch (operator) {
-            case ('+'): return initialValue + modifier;
-            case ('-'): return initialValue - modifier;
-            case ('*'): return initialValue * modifier;
-            case ('/'): return initialValue / modifier;
-            case ('%'): return initialValue % modifier;
-            default: return 0;
+            case ('+'): return initialValue.add(BigInteger.valueOf(modifier));
+            case ('-'): return initialValue.subtract(BigInteger.valueOf(modifier));
+            case ('*'): return initialValue.multiply(BigInteger.valueOf(modifier));
+            case ('/'): return initialValue.divide(BigInteger.valueOf(modifier));
+            case ('%'): return initialValue.mod(BigInteger.valueOf(modifier));
+            default: return BigInteger.valueOf(0);
         }
     }
 }
