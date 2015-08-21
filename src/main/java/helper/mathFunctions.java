@@ -260,4 +260,15 @@ public class MathFunctions {
 
         return 1;
     }
+
+    public static int performOperation(int initialValue, char operator, int modifier) {
+        switch (operator) {
+            case ('+'): return initialValue + modifier;
+            case ('-'): return initialValue - modifier;
+            case ('*'): return initialValue * modifier;
+            case ('/'): return initialValue / modifier;
+            case ('%'): return initialValue % modifier;
+            default: return 0;
+        }
+    }
 }
