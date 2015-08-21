@@ -39,6 +39,17 @@ public class Builder {
         return stringBuffer;
     }
 
+    // Takes a string of strings separated by a space and returns an Arraylist of strings
+    public static ArrayList<String> stringToStringArraylist(String str) {
+        ArrayList<String> list = new ArrayList<String>();
+        String[] tokens = str.split(" ");
+
+        for (int i = 0; i < tokens.length; i++) {
+            list.add(tokens[i]);
+        }
+        return list;
+    }
+
     private static String[] tokenizeString(StringBuffer stringBuffer) {
         return stringBuffer.toString().split(" ");
     }
