@@ -272,4 +272,11 @@ public class MathFunctions {
             default: return BigInteger.valueOf(0);
         }
     }
+
+    public static ArrayList<Integer> bubbleSort(ArrayList<Integer> unsortedArray) {
+        boolean wasChanged = false;
+
+
+        return null;
+    }
 }
