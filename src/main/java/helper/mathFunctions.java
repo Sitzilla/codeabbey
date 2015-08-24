@@ -275,7 +275,8 @@ public class MathFunctions {
 
     public static ArrayList<Long> bubbleSort(ArrayList<Long> integerArrayList) {
         boolean wasChanged = true;
-        int counter = 0;
+        int counterSwaps = 0;
+        int counterPasses = 0;
 
         while (wasChanged) {
             wasChanged = false;
@@ -285,11 +286,13 @@ public class MathFunctions {
                     integerArrayList.set(i, integerArrayList.get(i + 1));
                     integerArrayList.set(i + 1, tempNumber);
                     wasChanged = true;
-                    counter++;
+                    counterSwaps++;
                 }
             }
+            counterPasses++;
         }
-        System.out.println("Total number of swaps: " + counter + "\n");
+        System.out.println("Total number of passes: " + counterPasses + "\n" +
+                           "Total number of swaps: " + counterSwaps + "\n");
         return integerArrayList;
     }
 

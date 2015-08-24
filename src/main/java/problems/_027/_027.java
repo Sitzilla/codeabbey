@@ -1,4 +1,4 @@
-package main.java.problems._023;
+package main.java.problems._027;
 
 import main.java.helper.Builder;
 import main.java.helper.MathFunctions;
@@ -10,33 +10,27 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 /**
- * Created by evan on 8/22/15.
+ * Created by evan on 8/24/15.
  */
 
 // Pass in link to a text file of integers separated by a space in as
-// a single command line argument. example: /Users/evan/workspace/codeabbey/src/main/java/problems/_023/input
+// a single command line argument. example: /Users/evan/workspace/codeabbey/src/main/java/problems/_027/input
 // Text file example:
 // 2 15 97
 
-public class _023 {
+public class _027 {
     public static void main(String[] args) throws IOException {
-        bubbleSortInputSinglePass(args[0]);
+        bubbleSortInput(args[0]);
     }
 
-    public static void bubbleSortInputSinglePass(String fileName) throws IOException {
+    public static void bubbleSortInput(String fileName) throws IOException {
         File file = new File(fileName);
 
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             ArrayList<Long> unsortedArray;
 
             unsortedArray = Builder.buildLongArrayFromBufferedReader(br);
-
-            ArrayList<Long> sortedArray = MathFunctions.bubbleSortSinglePass(unsortedArray);
-            long checksumAnswer = MathFunctions.checksumOfArraylist(sortedArray);
-
-
-            System.out.print(checksumAnswer);
+            MathFunctions.bubbleSort(unsortedArray);
         }
     }
-
 }
