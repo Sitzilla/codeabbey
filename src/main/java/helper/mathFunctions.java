@@ -273,10 +273,20 @@ public class MathFunctions {
         }
     }
 
-    public static ArrayList<Integer> bubbleSort(ArrayList<Integer> unsortedArray) {
-        boolean wasChanged = false;
+    public static ArrayList<Integer> bubbleSort(ArrayList<Integer> integerArrayList) {
+        boolean wasChanged = true;
 
-
-        return null;
+        while (wasChanged) {
+            wasChanged = false;
+            for (int i = 0; i < integerArrayList.size() - 1; i++) { // -1 because no check happens with last digit
+                if (integerArrayList.get(i) > integerArrayList.get(i + 1)) {
+                    int tempNumber = integerArrayList.get(i);
+                    integerArrayList.set(i, integerArrayList.get(i + 1));
+                    integerArrayList.set(i + 1, tempNumber);
+                    wasChanged = true;
+                }
+            }
+        }
+        return integerArrayList;
     }
 }
