@@ -315,21 +315,25 @@ public class MathFunctions {
     // function to print difference between two times as defined in：
     // http://www.codeabbey.com/index/task_view/modulo-and-time-difference
     public static void differenceBetweenTwoFerryTimes(ArrayList<Integer> numbers) {
-        int dayOne = numbers.get(0);
-        int dayTwo = numbers.get(4);
+        int timeOne = numbers.get(3) + minutesToSeconds(numbers.get(2)) + hoursToSeconds(numbers.get(1)) + daysToSeconds(numbers.get(0));
+        int timeTwo = numbers.get(7) + minutesToSeconds(numbers.get(6)) + hoursToSeconds(numbers.get(5)) + daysToSeconds(numbers.get(4));
 
-        int timeOne = numbers.get(3) + minutesToSeconds(numbers.get(2)) + hoursToSeconds(numbers.get(1));
-        int timeTwo = numbers.get(7) + minutesToSeconds(numbers.get(6)) + hoursToSeconds(numbers.get(5));
+        int totalDifference = timeTwo - timeOne;
 
-        int difference = timeTwo - timeOne;
+        int diffDays = totalDifference / 60 / 60 / 24;
 
-        int diffSeconds = difference % 60;
-        int diffMinutes = difference % (60 * 60);
-        int diffHours = difference % (60 * 60 * 60);
-        int diffDays = dayTwo - dayOne;
+        int timeDifference = totalDifference - (daysToSeconds(diffDays));
 
-        System.out.println("(" + diffDays + ", " + diffHours + ", " + diffMinutes + ", " + diffSeconds + ") ");
+        int diffSeconds = timeDifference % 60;
+        int diffMinutes = timeDifference / 60 % 60;
+        int diffHours = timeDifference / 60 / 60 % 60;
 
+        System.out.println("(" + diffDays + " " + diffHours + " " + diffMinutes + " " + diffSeconds + ") ");
+
+    }
+
+    public static int daysToSeconds(int days) {
+        return 24 * hoursToSeconds(days);
     }
 
     public static int hoursToSeconds(int hours) {
