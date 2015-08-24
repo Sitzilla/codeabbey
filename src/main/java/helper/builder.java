@@ -18,6 +18,13 @@ public class Builder {
         return MathFunctions.stringArrayToIntegerArraylist(tokens);
     }
 
+    public static ArrayList<Long> buildLongArrayFromBufferedReader(BufferedReader br) throws IOException {
+        StringBuffer stringBuffer = readInputAsStringbuffer(br);
+        String[] tokens = tokenizeString(stringBuffer);
+
+        return MathFunctions.stringArrayToLongArraylist(tokens);
+    }
+
     public static ArrayList<String> buildStringArrayOfEachLineOfInput(BufferedReader br) throws IOException {
         String line;
         StringBuffer stringBuffer = new StringBuffer();
@@ -49,6 +56,17 @@ public class Builder {
         }
         return list;
     }
+
+    public static String arraylistToChecksum(ArrayList<Integer> array) {
+        StringBuffer stringBuffer = new StringBuffer();
+
+        for (Integer number : array) {
+            stringBuffer.append(number);
+        }
+
+        return stringBuffer.toString();
+    }
+
 
     private static String[] tokenizeString(StringBuffer stringBuffer) {
         return stringBuffer.toString().split(" ");

@@ -155,7 +155,7 @@ public class MathFunctions {
         return Math.round(sum / counter);
     }
 
-    public ArrayList<Long> stringArrayToLongArraylist(String[] str) {
+    public static ArrayList<Long> stringArrayToLongArraylist(String[] str) {
         ArrayList<Long> list = new ArrayList<Long>();
 
         for (int i = 0; i < str.length; i ++) {
@@ -176,7 +176,7 @@ public class MathFunctions {
     }
 
     // Algorithm defined at http://www.codeabbey.com/index/task_view/array-checksum
-    public long checksumOfArraylist(ArrayList<Long> list) {
+    public static long checksumOfArraylist(ArrayList<Long> list) {
         long result = 0;
         long limit = 10000007;
         int seed = 113;
@@ -273,20 +273,23 @@ public class MathFunctions {
         }
     }
 
-    public static ArrayList<Integer> bubbleSort(ArrayList<Integer> integerArrayList) {
+    public static ArrayList<Long> bubbleSort(ArrayList<Long> integerArrayList) {
         boolean wasChanged = true;
+        int counter = 0;
 
         while (wasChanged) {
             wasChanged = false;
             for (int i = 0; i < integerArrayList.size() - 1; i++) { // -1 because no check happens with last digit
                 if (integerArrayList.get(i) > integerArrayList.get(i + 1)) {
-                    int tempNumber = integerArrayList.get(i);
+                    long tempNumber = integerArrayList.get(i);
                     integerArrayList.set(i, integerArrayList.get(i + 1));
                     integerArrayList.set(i + 1, tempNumber);
                     wasChanged = true;
+                    counter++;
                 }
             }
         }
+        System.out.println("Total number of swaps: " + counter + "\n");
         return integerArrayList;
     }
 }

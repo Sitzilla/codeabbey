@@ -27,12 +27,15 @@ public class _023 {
         File file = new File(fileName);
 
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
-            ArrayList<Integer> unsortedArray;
+            ArrayList<Long> unsortedArray;
 
-            unsortedArray = Builder.buildIntArrayFromBufferedReader(br);
+            unsortedArray = Builder.buildLongArrayFromBufferedReader(br);
 
-            ArrayList<Integer> sortedArray = MathFunctions.bubbleSort(unsortedArray);
-            System.out.print(sortedArray);
+            ArrayList<Long> sortedArray = MathFunctions.bubbleSort(unsortedArray);
+            long checksumAnswer = MathFunctions.checksumOfArraylist(sortedArray);
+
+
+            System.out.print(checksumAnswer);
         }
     }
 
