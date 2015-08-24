@@ -31,7 +31,7 @@ public class _023 {
 
             unsortedArray = Builder.buildLongArrayFromBufferedReader(br);
 
-            ArrayList<Long> sortedArray = MathFunctions.bubbleSort(unsortedArray);
+            ArrayList<Long> sortedArray = MathFunctions.bubbleSortSinglePass(unsortedArray);
             long checksumAnswer = MathFunctions.checksumOfArraylist(sortedArray);
 
 

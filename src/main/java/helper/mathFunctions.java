@@ -292,4 +292,19 @@ public class MathFunctions {
         System.out.println("Total number of swaps: " + counter + "\n");
         return integerArrayList;
     }
+
+    public static ArrayList<Long> bubbleSortSinglePass(ArrayList<Long> integerArrayList) {
+        int counter = 0;
+
+        for (int i = 0; i < integerArrayList.size() - 1; i++) { // -1 because no check happens with last digit
+            if (integerArrayList.get(i) > integerArrayList.get(i + 1)) {
+                long tempNumber = integerArrayList.get(i);
+                integerArrayList.set(i, integerArrayList.get(i + 1));
+                integerArrayList.set(i + 1, tempNumber);
+                counter++;
+            }
+        }
+        System.out.println("Total number of swaps: " + counter + "\n");
+        return integerArrayList;
+    }
 }
