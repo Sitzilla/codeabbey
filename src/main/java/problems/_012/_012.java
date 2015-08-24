@@ -36,7 +36,7 @@ public class _012 {
 
             for (String line : linesOfInput) {
                 ArrayList<Integer> numbers = MathFunctions.stingToIntegerArraylist(line);
-                System.out.print(MathFunctions.differenceBetweenTwoFerryTimes(numbers));
+                MathFunctions.differenceBetweenTwoFerryTimes(numbers);
             }
         }
     }

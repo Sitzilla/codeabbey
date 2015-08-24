@@ -22,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MathFunctions.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MathFunctions.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/helper/MathFunctions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="293" column="78" selection-start-line="293" selection-start-column="78" selection-end-line="293" selection-end-column="78" />
+            <state vertical-scroll-proportion="0.8220339">
+              <caret line="315" column="53" selection-start-line="315" selection-start-column="23" selection-end-line="315" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_012.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_012.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/problems/_012/_012.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48305085">
-              <caret line="38" column="85" selection-start-line="38" selection-start-column="85" selection-end-line="38" selection-end-column="85" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="38" column="69" selection-start-line="38" selection-start-column="69" selection-end-line="38" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -163,11 +163,11 @@
         <option value="$PROJECT_DIR$/src/main/java/helper/Builder.java" />
         <option value="$PROJECT_DIR$/src/main/java/problems/_023/input" />
         <option value="$PROJECT_DIR$/src/main/java/problems/_023/_023.java" />
-        <option value="$PROJECT_DIR$/src/main/java/helper/MathFunctions.java" />
         <option value="$PROJECT_DIR$/src/main/java/problems/_027/_027.java" />
         <option value="$PROJECT_DIR$/src/main/java/problems/_027/input" />
         <option value="$PROJECT_DIR$/src/main/java/problems/_012/input" />
         <option value="$PROJECT_DIR$/src/main/java/problems/_012/_012.java" />
+        <option value="$PROJECT_DIR$/src/main/java/helper/MathFunctions.java" />
       </list>
     </option>
   </component>
@@ -1040,16 +1040,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/helper/MathFunctions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="293" column="78" selection-start-line="293" selection-start-column="78" selection-end-line="293" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/helper/Builder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1104,8 +1094,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/problems/_012/_012.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48305085">
-          <caret line="38" column="85" selection-start-line="38" selection-start-column="85" selection-end-line="38" selection-end-column="85" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="69" selection-start-line="38" selection-start-column="69" selection-end-line="38" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/helper/MathFunctions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8220339">
+          <caret line="315" column="53" selection-start-line="315" selection-start-column="23" selection-end-line="315" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -310,4 +310,18 @@ public class MathFunctions {
         System.out.println("Total number of swaps: " + counter + "\n");
         return integerArrayList;
     }
+
+    // function to print difference between two times as defined in：
+    // http://www.codeabbey.com/index/task_view/modulo-and-time-difference
+    public static void differenceBetweenTwoFerryTimes(ArrayList<Integer> numbers) {
+        int[] difference = new int[4];
+
+        difference[0] = numbers.get(4) - numbers.get(0);
+        difference[1] = numbers.get(5) - numbers.get(1);
+        difference[2] = numbers.get(6) - numbers.get(2);
+        difference[3] = numbers.get(7) - numbers.get(3);
+
+        System.out.println("(" + difference[0] + ", " + difference[1] + ", " + difference[2] + ", " + difference[3] + ")");
+
+    }
 }
