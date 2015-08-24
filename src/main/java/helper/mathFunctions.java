@@ -3,6 +3,7 @@ package main.java.helper;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Stack;
 
@@ -314,14 +315,30 @@ public class MathFunctions {
     // function to print difference between two times as defined in：
     // http://www.codeabbey.com/index/task_view/modulo-and-time-difference
     public static void differenceBetweenTwoFerryTimes(ArrayList<Integer> numbers) {
-        int[] difference = new int[4];
+        int dayOne = numbers.get(0);
+        int dayTwo = numbers.get(4);
 
-        difference[0] = numbers.get(4) - numbers.get(0);
-        difference[1] = numbers.get(5) - numbers.get(1);
-        difference[2] = numbers.get(6) - numbers.get(2);
-        difference[3] = numbers.get(7) - numbers.get(3);
+        int timeOne = numbers.get(3) + minutesToSeconds(numbers.get(2)) + hoursToSeconds(numbers.get(1));
+        int timeTwo = numbers.get(7) + minutesToSeconds(numbers.get(6)) + hoursToSeconds(numbers.get(5));
 
-        System.out.println("(" + difference[0] + ", " + difference[1] + ", " + difference[2] + ", " + difference[3] + ")");
+        int difference = timeTwo - timeOne;
+
+        int diffSeconds = difference % 60;
+        int diffMinutes = difference % (60 * 60);
+        int diffHours = difference % (60 * 60 * 60);
+        int diffDays = dayTwo - dayOne;
+
+        System.out.println("(" + diffDays + ", " + diffHours + ", " + diffMinutes + ", " + diffSeconds + ") ");
 
     }
+
+    public static int hoursToSeconds(int hours) {
+        return 60 * minutesToSeconds(hours);
+    }
+
+    public static int minutesToSeconds(int minutes) {
+        return 60 * minutes;
+    }
+
+
 }
