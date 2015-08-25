@@ -345,4 +345,7 @@ public class MathFunctions {
     }
 
 
+    public static String indexOfNumberInBigFibonacci(int i, String number) {
+        return null;
+    }
 }

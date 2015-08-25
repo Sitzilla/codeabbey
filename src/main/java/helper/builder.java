@@ -2,6 +2,7 @@ package main.java.helper;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.math.BigInteger;
 import java.util.ArrayList;
 
 /**
@@ -24,6 +25,7 @@ public class Builder {
 
         return MathFunctions.stringArrayToLongArraylist(tokens);
     }
+
 
     public static ArrayList<String> buildStringArrayOfEachLineOfInput(BufferedReader br) throws IOException {
         String line;
@@ -71,4 +73,6 @@ public class Builder {
     private static String[] tokenizeString(StringBuffer stringBuffer) {
         return stringBuffer.toString().split(" ");
     }
+
+
 }
