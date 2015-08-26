@@ -13,13 +13,14 @@ import java.util.ArrayList;
 /**
  * Created by evan on 8/25/15.
  */
+
 public class _067 {
 
     public static void main(String[] args) throws IOException {
-        counterForCollatzSequence(args[0]);
+        counterForBigFibonacci(args[0]);
     }
 
-    public static void counterForCollatzSequence(String fileName) throws IOException {
+    public static void counterForBigFibonacci(String fileName) throws IOException {
         File file = new File(fileName);
 
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
@@ -28,7 +29,7 @@ public class _067 {
             numbers = Builder.buildStringArrayOfEachLineOfInput(br);
 
             for (String number : numbers) {
-                System.out.print(MathFunctions.indexOfNumberInBigFibonacci(0, number) + " ");
+                System.out.print(MathFunctions.indexOfNumberInBigFibonacci(number) + " ");
             }
         }
     }

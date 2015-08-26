@@ -345,7 +345,21 @@ public class MathFunctions {
     }
 
 
-    public static String indexOfNumberInBigFibonacci(int i, String number) {
-        return null;
+    public static int indexOfNumberInBigFibonacci(String number) {
+        if (number.equals("0")) { return 0; }
+
+        int counter = 1;
+        BigInteger target = new BigInteger(number);
+        BigInteger a = BigInteger.valueOf(0);
+        BigInteger b = BigInteger.valueOf(1);
+        BigInteger temp;
+
+        while (true) {
+            if (target.equals(b)) { return counter; }
+                temp = b.add(a);
+                a = b;
+                b = temp;
+                counter++;
+        }
     }
 }
