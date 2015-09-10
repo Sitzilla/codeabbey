@@ -1,0 +1,34 @@
+package main.java.problems._026;
+
+import main.java.helper.Builder;
+import main.java.helper.MathFunctions;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+
+/**
+ * Created by evan on 9/10/15.
+ */
+public class _026 {
+
+    public static void main(String[] args) throws IOException {
+        calculateGreatestCommonDenominators(args[0]);
+    }
+
+    public static void calculateGreatestCommonDenominators(String fileName) throws IOException {
+        File file = new File(fileName);
+
+        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+            ArrayList<String> numbers;
+
+            numbers = Builder.buildStringArrayOfEachLineOfInput(br);
+
+            for (String number : numbers) {
+                System.out.print(MathFunctions.greatestCommonDenominator(number) + " ");
+            }
+        }
+    }
+}
