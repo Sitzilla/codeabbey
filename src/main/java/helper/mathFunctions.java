@@ -54,7 +54,7 @@ public class MathFunctions {
     }
 
     // Takes a string of integers separated by a space and returns an Arraylist of integers
-    public static ArrayList<Integer> stingToIntegerArraylist(String str) {
+    public static ArrayList<Integer> stringToIntegerArraylist(String str) {
         ArrayList<Integer> list = new ArrayList<Integer>();
         String[] tokens = str.split(" ");
 
@@ -361,5 +361,16 @@ public class MathFunctions {
                 b = temp;
                 counter++;
         }
+    }
+
+    public static int greatestCommonDenominator(int a, int b) {
+        while (a != b) {
+            if (a < b) {
+                b -= a;
+            } else {
+                a -= b;
+            }
+        }
+        return a;
     }
 }

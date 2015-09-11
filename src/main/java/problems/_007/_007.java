@@ -28,7 +28,7 @@ public class _007 {
                 stringBuffer.append(line);
             }
 
-            list = MathFunctions.stingToIntegerArraylist(stringBuffer.toString());
+            list = MathFunctions.stringToIntegerArraylist(stringBuffer.toString());
 
             for (int i = 0; i < list.size(); i++) {
                 System.out.print(mathFunction.fahrenheitToCelsius((double) list.get(i)) + " ");

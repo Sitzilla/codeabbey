@@ -33,7 +33,7 @@ public class _008 {
             ArrayList<String> sequences = Builder.buildStringArrayOfEachLineOfInput(br);
 
             for (String sequence : sequences) {
-                ArrayList<Integer> sequenceValues = MathFunctions.stingToIntegerArraylist(sequence);
+                ArrayList<Integer> sequenceValues = MathFunctions.stringToIntegerArraylist(sequence);
                 final int A = sequenceValues.get(0);
                 final int B = sequenceValues.get(1);
                 final int N = sequenceValues.get(2);

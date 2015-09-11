@@ -22,12 +22,15 @@ public class _026 {
         File file = new File(fileName);
 
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
-            ArrayList<String> numbers;
+            ArrayList<String> stringNumbers;
 
-            numbers = Builder.buildStringArrayOfEachLineOfInput(br);
+            stringNumbers = Builder.buildStringArrayOfEachLineOfInput(br);
 
-            for (String number : numbers) {
-                System.out.print(MathFunctions.greatestCommonDenominator(number) + " ");
+            for (String lineOfNumber : stringNumbers) {
+
+                ArrayList<Integer> number = MathFunctions.stringToIntegerArraylist(lineOfNumber);
+
+                System.out.print(MathFunctions.greatestCommonDenominator(number.get(0), number.get(1)) + " ");
             }
         }
     }
