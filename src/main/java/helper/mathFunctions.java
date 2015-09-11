@@ -373,4 +373,8 @@ public class MathFunctions {
         }
         return a;
     }
+
+    public static int leaseCommonMultiple(int a, int b, int gcd) {
+        return a * b / gcd;
+    }
 }

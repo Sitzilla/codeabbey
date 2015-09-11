@@ -29,8 +29,9 @@ public class _026 {
             for (String lineOfNumber : stringNumbers) {
 
                 ArrayList<Integer> number = MathFunctions.stringToIntegerArraylist(lineOfNumber);
-
-                System.out.print(MathFunctions.greatestCommonDenominator(number.get(0), number.get(1)) + " ");
+                int GCD = MathFunctions.greatestCommonDenominator(number.get(0), number.get(1));
+                int LCM = MathFunctions.leaseCommonMultiple(number.get(0), number.get(1), GCD);
+                        System.out.print("(" + GCD + " " + LCM + ") ");
             }
         }
     }
