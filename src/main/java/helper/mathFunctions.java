@@ -377,4 +377,18 @@ public class MathFunctions {
     public static int leaseCommonMultiple(int a, int b, int gcd) {
         return a * b / gcd;
     }
+
+
+    // solve for y = mx + b
+    public static String linearFuction(double x1, double y1, double x2, double y2) {
+        double m = getSlope(x1, y1, x2, y2);
+        double b = y1 - m * x1;
+
+        return "(" + (int) m + " " + (int) b + ") ";
+    }
+
+    // m = (y2 - y1) / (x2 - x1)
+    public static double getSlope(double x1, double y1, double x2, double y2) {
+        return (y2 - y1) / (x2 - x1);
+    }
 }

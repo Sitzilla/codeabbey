@@ -28,10 +28,10 @@ public class _010 {
                 final int x1 = sequenceValues.get(0);
                 final int y1 = sequenceValues.get(1);
                 final int x2 = sequenceValues.get(2);
-                final int y2 = sequenceValues.get(1);
+                final int y2 = sequenceValues.get(3);
 
 
-                System.out.print(MathFunctions.linearFuction(x1, y1, x2, y2) + " ");
+                System.out.print(MathFunctions.linearFuction(x1, y1, x2, y2));
             }
         }
     }
