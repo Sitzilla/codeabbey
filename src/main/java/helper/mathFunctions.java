@@ -391,4 +391,10 @@ public class MathFunctions {
     public static double getSlope(double x1, double y1, double x2, double y2) {
         return (y2 - y1) / (x2 - x1);
     }
+
+    public static void psuodorandomGenerator(Double x) {
+
+        x = Math.pow(x, 2);
+
+    }
 }
