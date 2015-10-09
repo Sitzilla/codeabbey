@@ -392,9 +392,18 @@ public class MathFunctions {
         return (y2 - y1) / (x2 - x1);
     }
 
-    public static void psuodorandomGenerator(Double x) {
+    public static int iterationsInPseudorandomLoop(int x) {
+        int counter = 0;
+        psuodorandomGenerator((double) x);
+        counter++;
 
+        return counter;
+    }
+
+    public static int psuodorandomGenerator(Double x) {
         x = Math.pow(x, 2);
-
+        double truncated = x / 100;
+        int trimmed = (int) truncated % 10000;
+        return trimmed;
     }
 }

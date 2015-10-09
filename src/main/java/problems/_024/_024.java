@@ -1,6 +1,5 @@
 package main.java.problems._024;
 
-import main.java.helper.Builder;
 import main.java.helper.MathFunctions;
 
 import java.io.BufferedReader;
@@ -34,7 +33,7 @@ public class _024 {
 
             for (int i = 0; i < list.size(); i++) {
 //                System.out.println(list.get(i));
-                MathFunctions.psuodorandomGenerator((double) list.get(i));
+                MathFunctions.iterationsInPseudorandomLoop(list.get(i));
             }
         }
     }
