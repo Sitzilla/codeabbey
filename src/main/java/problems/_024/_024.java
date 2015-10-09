@@ -32,8 +32,7 @@ public class _024 {
             list = MathFunctions.stringToIntegerArraylist(stringBuffer.toString());
 
             for (int i = 0; i < list.size(); i++) {
-//                System.out.println(list.get(i));
-                MathFunctions.iterationsInPseudorandomLoop(list.get(i));
+                System.out.print(MathFunctions.iterationsInPseudorandomLoop(list.get(i)) + " ");
             }
         }
     }

@@ -394,9 +394,21 @@ public class MathFunctions {
 
     public static int iterationsInPseudorandomLoop(int x) {
         int counter = 0;
-        psuodorandomGenerator((double) x);
-        counter++;
+        ArrayList<Integer> sequence = new ArrayList<>();
+        boolean inLoop = true;
+        int newest = x;
+        sequence.add(newest);
 
+        while (inLoop) {
+            newest = psuodorandomGenerator((double) newest);
+
+            if (sequence.contains(newest)) {
+                inLoop = false;
+            }
+
+            counter++;
+            sequence.add(newest);
+        }
         return counter;
     }
 
