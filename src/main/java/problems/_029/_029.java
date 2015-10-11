@@ -35,14 +35,15 @@ public class _029 {
 
             // integer array to pair arraylist of value and index
             for (int i = 0; i < list.size(); i++) {
-                Pair pair = new Pair(list.get(i), i);
+                Pair pair = new Pair(list.get(i), i + 1);
                 pairList.add(pair);
 
             }
 
+            pairList.sort(null);
 
-            for (int i = 0; i < list.size(); i++) {
-                System.out.print(MathFunctions.sortArraylistOfPairs(pairList);
+            for (int i = 0; i < pairList.size(); i++  ) {
+                System.out.print(pairList.get(i).getSecond() + " ");
             }
         }
     }
