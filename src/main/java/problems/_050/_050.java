@@ -1,5 +1,6 @@
-package main.java.problems._50;
+package main.java.problems._050;
 
+import main.java.helper.Builder;
 import main.java.helper.MathFunctions;
 
 import java.io.BufferedReader;
@@ -10,7 +11,7 @@ import java.io.IOException;
 /**
  * Created by evan on 10/13/15.
  */
-public class _50 {
+public class _050 {
 
     public static void main(String[] args) throws IOException {
         checkPalindromes(args[0]);
@@ -24,12 +25,11 @@ public class _50 {
             MathFunctions mathFunction = new MathFunctions();
 
             while ((line = br.readLine()) != null) {
-                String[] tokens = line.split(" ");
-                 String answer;
+                 String parsedLine;
+                 parsedLine = Builder.removeSpacesAndPunctuation(line);
+//                answer = mathFunction.isPalindrome(line);
 
-                answer = mathFunction.isPalindrome(line);
-
-                System.out.print(answer + " ");
+                System.out.println(parsedLine + " ");
             }
         }
     }

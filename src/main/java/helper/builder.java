@@ -69,6 +69,12 @@ public class Builder {
         return stringBuffer.toString();
     }
 
+    public static String removeSpacesAndPunctuation(String string) {
+        string = string.replaceAll("\\s+", "");
+        string = string.replaceAll("[^a-zA-Z ]", "").toLowerCase();
+
+        return string;
+    }
 
     private static String[] tokenizeString(StringBuffer stringBuffer) {
         return stringBuffer.toString().split(" ");

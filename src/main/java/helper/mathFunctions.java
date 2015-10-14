@@ -418,4 +418,9 @@ public class MathFunctions {
         int trimmed = (int) truncated % 10000;
         return trimmed;
     }
+
+    public boolean isPalindrome(String line) {
+
+        return false;
+    }
 }
