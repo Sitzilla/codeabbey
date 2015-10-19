@@ -419,8 +419,20 @@ public class MathFunctions {
         return trimmed;
     }
 
-    public boolean isPalindrome(String line) {
+    // Starts at the front and the end of the line and works towards the middle.  Returns false if the two tokens
+    // 'front' and 'back' dont match
+    public String isPalindrome(String line) {
+        char front;
+        char last;
 
-        return false;
+        for (int i = 0; i < line.length() / 2; i++) {
+            front = line.charAt(i);
+            last = line.charAt(line.length() - (i + 1));
+
+            if (front != last) {
+                return "N";
+            }
+        }
+        return "Y";
     }
 }

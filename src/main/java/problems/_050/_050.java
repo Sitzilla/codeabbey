@@ -23,13 +23,14 @@ public class _050 {
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             String line;
             MathFunctions mathFunction = new MathFunctions();
+            String answer;
 
             while ((line = br.readLine()) != null) {
                  String parsedLine;
                  parsedLine = Builder.removeSpacesAndPunctuation(line);
-//                answer = mathFunction.isPalindrome(line);
+                 answer = mathFunction.isPalindrome(parsedLine);
 
-                System.out.println(parsedLine + " ");
+                 System.out.print(answer + " ");
             }
         }
     }
