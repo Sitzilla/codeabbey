@@ -176,6 +176,16 @@ public class MathFunctions {
         return list;
     }
 
+    public static ArrayList<Double> stringArrayToDoubleArraylist(String[] str) {
+        ArrayList<Double> list = new ArrayList<Double>();
+
+        for (int i = 0; i < str.length; i ++) {
+            list.add(Double.parseDouble(str[i]));
+        }
+
+        return list;
+    }
+
     // Algorithm defined at http://www.codeabbey.com/index/task_view/array-checksum
     public static long checksumOfArraylist(ArrayList<Long> list) {
         long result = 0;
