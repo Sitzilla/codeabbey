@@ -24,7 +24,7 @@ public class _057 {
             String line;
             StringBuffer stringBuffer = new StringBuffer();
             ArrayList<Double> temperaturesList = new ArrayList<Double>();
-            ArrayList<Double> answer = new ArrayList<Double>();
+            ArrayList<Double> answers = new ArrayList<Double>();
             MathFunctions mathFunction = new MathFunctions();
 
             while ((line = br.readLine()) != null) {
@@ -35,12 +35,10 @@ public class _057 {
 
             temperaturesList = MathFunctions.stringArrayToDoubleArraylist(temperatures);
 
-            answer = mathFunction.threeDatapointsSmoothing(temperaturesList);
+            answers = mathFunction.threeDatapointsSmoothing(temperaturesList);
 
-            for (int i = 0; i < answer.size(); i++) {
-                if (answer.get(i) != 0) {
-                    System.out.print(answer.get(i) + " ");
-                }
+            for (double answer : answers) {
+                System.out.print(answer + " ");
             }
         }
     }

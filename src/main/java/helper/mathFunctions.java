@@ -445,4 +445,24 @@ public class MathFunctions {
         }
         return "Y";
     }
+
+    // Smooths an arraylist of data by converting a single point of data to the average between itself and
+    // both its neighbors on its right and left in the arraylist
+    public static ArrayList<Double> threeDatapointsSmoothing(ArrayList<Double> originalDataset) {
+        ArrayList<Double> smoothedDataset = new ArrayList<Double>();
+
+        // Set the first element since it is not smoothed
+        smoothedDataset.add(originalDataset.get(0));
+
+        // Iterate through the list, skipping the first and the last
+        for (int i = 1; i < originalDataset.size() - 1; i++) {
+            double smoothedPoint = (originalDataset.get(i - 1) + originalDataset.get(i) + originalDataset.get(i + 1)) / 3;
+            smoothedDataset.add(smoothedPoint);
+        }
+
+        // Set the last element since it is not smoothed
+        smoothedDataset.add(originalDataset.get(originalDataset.size() - 1));
+
+        return smoothedDataset;
+    }
 }
