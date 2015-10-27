@@ -465,4 +465,8 @@ public class MathFunctions {
 
         return smoothedDataset;
     }
+
+    public static double calculateTimeToIntersect(double distance, double speedA, double speedB) {
+        return distance / (speedA + speedB);
+    }
 }

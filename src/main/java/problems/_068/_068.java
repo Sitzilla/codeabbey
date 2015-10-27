@@ -25,9 +25,9 @@ public class _068 {
 
             for (String sequence : sequences) {
                 ArrayList<Integer> sequenceValues = MathFunctions.stringToIntegerArraylist(sequence);
-                final int distance = sequenceValues.get(0);
-                final int speedA = sequenceValues.get(1);
-                final int speedB = sequenceValues.get(2);
+                final long distance = sequenceValues.get(0);
+                final long speedA = sequenceValues.get(1);
+                final long speedB = sequenceValues.get(2);
 
                 System.out.print(MathFunctions.calculateTimeToIntersect(distance, speedA, speedB) + " ");
             }
