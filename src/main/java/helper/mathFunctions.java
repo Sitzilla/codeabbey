@@ -469,4 +469,17 @@ public class MathFunctions {
     public static double calculateTimeToIntersect(double distance, double speedA, double speedB) {
         return distance / (speedA + speedB);
     }
+
+    public static String reverseStringByNumber(int number, String message) {
+        String newMessage = "";
+
+        if (number > 0) {
+            newMessage = message.substring(number) + message.substring(0, number);
+        } else {
+            number = Math.abs(number);
+            newMessage = message.substring(message.length() - number) + message.substring(0, message.length() - number);
+        }
+
+        return newMessage;
+    }
 }

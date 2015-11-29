@@ -28,8 +28,7 @@ public class _031 {
                 final int number = Integer.parseInt(stringArray[0]);
                 final String message = stringArray[1];
 
-                System.out.print(number + " " + message + " ");
-                // System.out.print(MathFunctions.reverseStringByNumber(number, message) + " ");
+                System.out.print(MathFunctions.reverseStringByNumber(number, message) + " ");
             }
         }
     }
