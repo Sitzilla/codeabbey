@@ -28,9 +28,7 @@ public class _032 {
                 final int totalNumber = Integer.parseInt(stringArray[0]);
                 final int skipNumber = Integer.parseInt(stringArray[1]);
 
-                System.out.print(totalNumber + " " + skipNumber);
-
-//                System.out.print(MathFunctions.removeEveryN(totalNumber, skipNumber) + " ");
+                System.out.print(MathFunctions.removeEveryN(totalNumber, skipNumber) + " ");
             }
         }
     }

@@ -482,4 +482,23 @@ public class MathFunctions {
 
         return newMessage;
     }
+
+
+    public static int removeEveryN(int totalNumber, int skipNumber) {
+
+        ArrayList<Integer> numbers = new ArrayList<>();
+        int index = 0;
+
+        for (int i = 0; i < totalNumber; i++) { numbers.add(i + 1); }
+
+        while (numbers.size() > 1) {
+            index += skipNumber - 1;
+
+            if (index >= numbers.size()) { index = index % numbers.size(); }
+
+            numbers.remove(index);
+        }
+
+        return numbers.get(0);
+    }
 }
