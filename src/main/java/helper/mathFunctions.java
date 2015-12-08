@@ -501,4 +501,26 @@ public class MathFunctions {
 
         return numbers.get(0);
     }
+
+    // Determines the type of triangle from their length.  The largest angle is in the variable 'c'
+    public static String calculateTypeOfTriangle(int a, int b, int c) {
+        double aSquared = Math.pow(a, 2);
+        double bSquared = Math.pow(b, 2);
+        double cSquared = Math.pow(c, 2);
+
+        if (cSquared == aSquared + bSquared) {
+            return "R";
+        }
+
+        if (cSquared > aSquared + bSquared) {
+            return "O";
+        }
+
+        if (cSquared < aSquared + bSquared) {
+            return "A";
+        }
+
+
+        return null;
+    }
 }
